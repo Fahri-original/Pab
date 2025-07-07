@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - PAB Sari Banyu Bening</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#manage-bills">Kelola Tagihan</a></li>
+                    <li><a href="#manage-members">Kelola Anggota</a></li>
+                    <li><a href="#manage-admins">Kelola Admin</a></li>
+                    <li><a href="../index.html">Kembali ke Beranda</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="dashboard">
+            <h2>Dashboard Admin</h2>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Pelanggan</h3>
+                    <p id="total-customers">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tagihan Bulan Ini</h3>
+                    <p id="current-bills">Rp 0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Pembayaran Terakhir</h3>
+                    <p id="last-payment">Rp 0</p>
+                </div>
+            </div>
+            
+            <div class="admin-actions">
+                <button id="add-bill" class="btn">Tambah Tagihan</button>
+                <button id="add-member" class="btn">Tambah Anggota</button>
+                <button id="add-admin" class="btn">Tambah Admin</button>
+            </div>
+            
+            <div id="add-admin-form" class="hidden">
+                <h3>Tambah Admin Baru</h3>
+                <form id="new-admin-form">
+                    <div class="form-group">
+                        <label for="new-admin-email">Email Admin</label>
+                        <input type="email" id="new-admin-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-admin-name">Nama Lengkap</label>
+                        <input type="text" id="new-admin-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-admin-password">Password</label>
+                        <input type="password" id="new-admin-password" required>
+                    </div>
+                    <button type="submit" class="btn">Simpan</button>
+                    <button type="button" id="cancel-add-admin" class="btn btn-danger">Batal</button>
+                </form>
+            </div>
+            
+            <div id="add-member-form" class="hidden">
+                <h3>Tambah Anggota</h3>
+                <form id="new-member-form">
+                    <div class="form-group">
+                        <label for="member-name">Nama Lengkap</label>
+                        <input type="text" id="member-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="member-address">Alamat</label>
+                        <input type="text" id="member-address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="id-pelangan">ID</label>
+                        <input type="text" id="id-pelangan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="member-email">Email</label>
+                        <input type="email" id="member-email">
+                    </div>
+                    <button type="submit" class="btn">Simpan</button>
+                    <button type="button" id="cancel-add-member" class="btn btn-danger">Batal</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
