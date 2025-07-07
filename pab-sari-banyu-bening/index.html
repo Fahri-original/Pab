@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAB Sari Banyu Bening Tekik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PAB Sari Banyu Bening Tekik</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#payment">Pembayaran</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="admin/admin.html" id="admin-link">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h2>Selamat Datang di Sistem Pembayaran PAB</h2>
+            <p>Lakukan pembayaran tagihan air Anda dengan mudah dan cepat.</p>
+        </section>
+
+        <section id="payment">
+            <h2>Pembayaran Tagihan</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="no-pelanggan">Nomor Pelanggan</label>
+                    <input type="text" id="no-pelanggan" required>
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah Pembayaran (Rp)</label>
+                    <input type="number" id="jumlah" required>
+                </div>
+                <div class="form-group">
+                    <label for="metode">Metode Pembayaran</label>
+                    <select id="metode" required>
+                        <option value="">Pilih Metode</option>
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="qris">QRIS</option>
+                        <option value="tunai">Tunai</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Bayar Sekarang</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <p>Create by Fahri.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PAB Sari Banyu Bening Tekik. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
